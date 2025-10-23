@@ -5,7 +5,10 @@
 
 #include <iostream>
 #include <vector>
+#include <String>
 #include "fibonacci.h"
-#include "palindrom.h"
+#include "palindrome.h"
+#include "utils.h"
+#include "List.h"
 
 // TODO: установите здесь ссылки на дополнительные заголовки, требующиеся для программы.
