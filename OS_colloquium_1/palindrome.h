@@ -2,5 +2,6 @@
 
 #include <string>
 #include <algorithm>
+#include "utils.h"
 
-bool isNumPalindrom(unsigned long long);
+bool isNumPalindrome(std::string);
