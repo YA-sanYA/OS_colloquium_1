@@ -1,6 +1,10 @@
 #include "fibonacci.h"
 
 std::vector<unsigned long long> firstFibonacciNumbers(int n) {
+	if (n < 0 || n > 94) {
+		throw std::invalid_argument("Invalid input, the number must be between 0 and 49");
+	}
+
 	std::vector<unsigned long long> Fibonacci(n);
 
 	if (n > 0) {
