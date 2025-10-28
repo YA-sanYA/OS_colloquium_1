@@ -18,6 +18,7 @@ private:
 public:
 	List();
 	~List();
+	friend bool operator==(const List&, const List&);
 	void pushBack(const int&);
 	void print() const;
 	void reverse();

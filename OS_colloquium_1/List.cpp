@@ -12,6 +12,21 @@ List::~List() {
 	}
 }
 
+bool operator==(const List& l1, const List& l2) {
+	List::Node* curr1 = l1.head;
+	List::Node* curr2 = l2.head;
+
+	while (curr1 && curr2) {
+		if (curr1->value != curr2->value)
+			return false;
+
+		curr1 = curr1->next;
+		curr2 = curr2->next;
+	}
+
+	return curr1 == nullptr && curr2 == nullptr;
+}
+
 void List::pushBack(const int& val) {
 	Node* node = new Node(val);
 
